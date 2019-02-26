@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <title>Favorite Things</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h3>Tell us your favorite things!</h3>
+      </div>
+      <div id="favorite-form">
+        <form>
+          <div class="form-group">
+            <label for="name">First name</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+          <div class="form-group">
+            <label for="animal">Favorite animal</label>
+            <input type="text" class="form-control" id="animal" required>
+          </div>
+          <div class="form-group">
+            <label for="color">
+            Favorite color</label>
+            <input type="text" class="form-control" id="color" required>
+          </div>
+          <div class="form-group">
+            <label for="season">Favorite season</label>
+            <input type="text" class="form-control" id="season" required>
+          </div>
+          <button type="submit" class="btn btn-danger" id="submit-button">Submit</button>
+        </form>
+      </div>
+
+      <div id="fav-list">
+        <h4>Here are your favorite things, <span id="name-item"></span>!</h4>
+        <ul>
+          <li><span id="animal-item"></span></li>
+          <li><span id="color-item"></span></li>
+          <li><span id="season-item"></span></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
