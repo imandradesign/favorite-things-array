@@ -1,7 +1,7 @@
 $(document).ready(function(){
   $("#fav-list").hide();
 
-  $("#favorite-form form").submit(function(){
+  $("#favorite-form form").submit(function(event){
     var nameInput = $("input#name").val();
     var animalInput = $("input#animal").val();
     var colorInput = $("input#color").val();
